@@ -323,35 +323,6 @@ footer a:hover {
     text-align: justify;
 }
 
-/* #about-us {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-#about-us div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-#about-us img {
-    width: 500px;
-    height: 500px;
-}
-
-#about-us div h2 {
-    margin-block: 5px;
-}
-
-#about-us p {
-    padding-inline: 1rem;
-    text-align: right;
-    font-size: larger;
-} */
-
 /* Gallery */
 .gallery-title {
     display: flex;
