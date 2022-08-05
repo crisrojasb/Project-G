@@ -49,6 +49,18 @@ body {
     cursor: pointer;
 }
 
+#check {
+    display: none;
+}
+
+#check:checked ~ .list-nav {
+    height: 400px;
+}
+
+#check:checked ~ .list-nav li {
+    display: block;
+}
+
 .bar-button {
     font-size: 25px;
     color: white;
@@ -83,18 +95,6 @@ body {
     text-shadow: 0 0 10px #79dc7b, 0 0 20px rgb(121, 220, 123), 0 0 40px rgb(121, 220, 123);
     color: #fff;
     transition: .3s ;
-}
-
-#check {
-    display: none;
-}
-
-#check:checked ~ .list-nav {
-    height: 400px;
-}
-
-#check:checked ~ .list-nav li {
-    display: block;
 }
 
 footer {
@@ -161,7 +161,7 @@ footer a:hover {
     align-items: center;
     justify-content: space-around;
     border-style: outset;
-    border-color: rgb(127, 255, 212, 0.2);
+    border-color: rgba(127, 255, 212, 0.2);
     margin: .5rem 1rem;
     padding: 5px;
 }
@@ -329,7 +329,7 @@ footer a:hover {
     justify-content: center;
 }
 
-.container-gallery h2 {
+.gallery-title h2 {
     text-align: center;
     padding: 10px;
 }
@@ -368,7 +368,7 @@ footer a:hover {
     box-shadow: 0 0 10px 5px rgba(0, 140, 186, 0.5);
 }
 
-/* Sign-in */
+/* Sign-up */
 .container-sign-up {
     display: flex;
     align-items: center;
