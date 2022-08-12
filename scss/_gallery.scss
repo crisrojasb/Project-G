@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: center;
 
-        :nth-child(9) {
+        &:nth-child(9) {
             grid-row-start: span 2;
         }
 
@@ -32,11 +32,11 @@
             object-fit: cover;
             border-radius: .2rem;
 
-            :hover {
+            &:hover {
                 width: 100%;
                 height: 100%;
                 cursor: grab;
-                box-shadow: 0 0 10px 5px rgba(0, 140, 186, 0.5);
+                box-shadow: 0 0 10px 5px $b-color-3;
             }
         }
     }

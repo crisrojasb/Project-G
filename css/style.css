@@ -11,7 +11,7 @@
 body {
     font-family: 'Mali', cursive;
     color: white;
-    background-color: #011a01;
+    background-color: rgb(1, 26, 1);
 }
 
 .wrapper_ {
@@ -21,7 +21,7 @@ body {
 .header_ {
     padding-inline: 10px;
     background-color: rgba(17, 17, 17, 0.75);
-    box-shadow: 0 3px 7px 0 rgb(0, 0, 0 / 35%);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 35%);
     margin: 0;
     top: 0;
     position: sticky;

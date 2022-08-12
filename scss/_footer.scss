@@ -1,5 +1,5 @@
 footer {
-    background-color: #0e3e10;
+    background-color: $bg-color-4;
 
     p {
         margin: 5px;
@@ -7,12 +7,12 @@ footer {
 
     a {
         text-decoration: none;
-        color: white;
+        color: $color-1;
 
-        :hover {
+        &:hover {
             text-decoration: underline;
-            text-shadow: 0 0 5px #79dc7b, 0 0 10px rgb(121, 220, 123), 0 0 20px rgb(121, 220, 123);
-            color: #fff;
+            text-shadow: 0 0 5px $color-3, 0 0 10px $color-3, 0 0 20px $color-3;
+            color: $color-1;
             transition: .3s;
         }
     }
