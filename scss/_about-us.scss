@@ -1,0 +1,26 @@
+.container_au {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .card {
+        width: 30rem;
+
+        img {
+            width: 100%;
+        }
+
+        .card-body {
+            color: #011a01;
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}

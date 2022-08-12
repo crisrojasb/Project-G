@@ -1,0 +1,26 @@
+.container-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imgs/Gallery-1004.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    width: 100%;
+
+    .sign-up {
+        width: 90%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s ease-out;
+
+        h3 {
+            padding: 2.7rem 0;
+            font-size: 2rem;
+        }
+    }
+}

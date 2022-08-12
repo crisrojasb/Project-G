@@ -1,0 +1,19 @@
+footer {
+    background-color: #0e3e10;
+
+    p {
+        margin: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        :hover {
+            text-decoration: underline;
+            text-shadow: 0 0 5px #79dc7b, 0 0 10px rgb(121, 220, 123), 0 0 20px rgb(121, 220, 123);
+            color: #fff;
+            transition: .3s;
+        }
+    }
+}

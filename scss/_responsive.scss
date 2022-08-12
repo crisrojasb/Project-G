@@ -1,0 +1,96 @@
+@media screen and (min-width: 1280px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 85px;
+    }
+
+    .bar-button {
+        display: none;
+    }
+
+    .list-nav {
+        position: relative;
+        height: 85px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .list-nav li {
+        display: inline-block;
+        line-height: 85px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .list-nav li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .start {
+        display: contents;
+        
+        a {
+            display: none;
+        }
+    }
+
+    .img-background {
+        object-fit: contain;
+    }
+
+    .column-img {
+        flex-direction: column;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column-text {
+        flex-direction: column;
+        height: 200px;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .container-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about-us img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .pre-register-bg img {
+        display: none;
+    }
+
+    .container-sign-up {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery-item:nth-child(9) {
+        grid-row-start: span 1;
+    }
+}

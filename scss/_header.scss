@@ -1,0 +1,90 @@
+.header_ {
+    padding-inline: 10px;
+    background-color: rgba(17, 17, 17, 0.75);
+    box-shadow: 0 3px 7px 0 rgb(0, 0, 0 / 35%);
+    margin: 0;
+    top: 0;
+    position: sticky;
+    z-index: 99;
+    height: 65px;
+    width: 100%;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: large;
+        height: 65px;
+        width: 100%;
+
+        .logo {
+            width: 200px;
+            height: 50px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        #check {
+            display: none;
+
+            &:checked {
+                height: 400px;
+
+                li {
+                    display: block;
+                }
+            }
+
+            .list-nav {
+                height: 400px;
+
+                li {
+                    display: block;
+                }
+            }
+        }
+
+        .bar-button {
+            font-size: 25px;
+            color: white;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        .list-nav {
+            position: fixed;
+            width: 100%;
+            top: 65px;
+            background:rgba(17, 17, 17, 0.75);
+            text-align: right;
+            transition: all .5s;
+
+            li {
+                display: none;
+                line-height: 30px;
+                margin: 50px 70px; 
+                transform: all .5s;
+
+                a {
+                    color: white;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+
+                    .active {
+                        text-shadow: 0 0 10px #79dc7b, 0 0 20px rgb(121, 220, 123), 0 0 40px rgb(121, 220, 123);
+                        color: #fff;
+                        transition: .3s ;
+                    }
+
+                    &:hover {
+                        text-shadow: 0 0 10px #79dc7b, 0 0 20px rgb(121, 220, 123), 0 0 40px rgb(121, 220, 123);
+                        color: #fff;
+                        transition: .3s ;
+                    }
+                }
+            }
+        }
+    }
+}

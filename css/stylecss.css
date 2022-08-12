@@ -12,12 +12,7 @@ body {
   color: white;
   background-color: #011a01; }
   body .wrapper_ {
-    min-height: calc(100vh - 65px);
-    /* header */
-    /* pre-register */
-    /* about us */
-    /* Gallery */
-    /* Sign-up */ }
+    min-height: calc(100vh - 65px); }
     body .wrapper_ .header_ {
       padding-inline: 10px;
       background-color: rgba(17, 17, 17, 0.75);
@@ -43,9 +38,13 @@ body {
           cursor: pointer; }
         body .wrapper_ .header_ nav #check {
           display: none; }
-          body .wrapper_ .header_ nav #check :checked ~ .list-nav {
+          body .wrapper_ .header_ nav #check:checked {
             height: 400px; }
-            body .wrapper_ .header_ nav #check :checked ~ .list-nav li {
+            body .wrapper_ .header_ nav #check:checked li {
+              display: block; }
+          body .wrapper_ .header_ nav #check .list-nav {
+            height: 400px; }
+            body .wrapper_ .header_ nav #check .list-nav li {
               display: block; }
         body .wrapper_ .header_ nav .bar-button {
           font-size: 25px;
@@ -69,7 +68,11 @@ body {
               font-size: 16px;
               text-transform: uppercase;
               font-weight: 600; }
-              body .wrapper_ .header_ nav .list-nav li a .active, body .wrapper_ .header_ nav .list-nav li a :hover {
+              body .wrapper_ .header_ nav .list-nav li a .active {
+                text-shadow: 0 0 10px #79dc7b, 0 0 20px #79dc7b, 0 0 40px #79dc7b;
+                color: #fff;
+                transition: .3s; }
+              body .wrapper_ .header_ nav .list-nav li a:hover {
                 text-shadow: 0 0 10px #79dc7b, 0 0 20px #79dc7b, 0 0 40px #79dc7b;
                 color: #fff;
                 transition: .3s; }
@@ -282,7 +285,6 @@ body {
             text-align: center;
             align-content: center; }
 
-/* Responsive */
 @media screen and (min-width: 1280px) {
   .logo {
     margin-left: 50px; }
