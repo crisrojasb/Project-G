@@ -17,10 +17,9 @@
     position: relative;
     
     .gallery-item {
+        @extend .align-center;
         padding: 5px;
         display: flex;
-        align-items: center;
-        justify-content: center;
 
         &:nth-child(9) {
             grid-row-start: span 2;
@@ -31,6 +30,7 @@
             height: 98%;
             object-fit: cover;
             border-radius: .2rem;
+            transition: width .5s, height .5s, box-shadow .2s;
 
             &:hover {
                 width: 100%;

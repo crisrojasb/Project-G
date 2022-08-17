@@ -1,6 +1,18 @@
 @import "_variables";
 
 @import "_reset";
+
+// extend
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+// mixin
+@mixin size ($_height, $_width) {
+    height: $_height;
+    width: $_width;
+}
     
 body {
     font-family: 'Mali', cursive;
@@ -13,10 +25,9 @@ body {
         @import "_header";
 
         .intersection {
-            height: 100px;
+            @extend .align-center;
+            height: 50px;
             display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         @import "_container_";

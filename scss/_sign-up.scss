@@ -10,12 +10,11 @@
     width: 100%;
 
     .sign-up {
+        @extend .align-center;
         width: 90%;
         height: 75vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         transition: all .5s ease-out;
 
         h3 {

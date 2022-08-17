@@ -51,25 +51,27 @@ main {
                 margin: 8px;
 
                 .column-img {
+                    @extend .align-center;
                     flex-direction: row;
                     -ms-flex: 60%;
                     flex: 60%;
                     max-width: 60%;
                     height: 500px;
                     padding: 0 4px;
-                    align-items: center;
-                    justify-content: center;
                     vertical-align: middle;
     
                     .media-img {
+                        @extend .align-center;
+                        display: flex;
+
                         img {
-                            width: 99%;
-                            height: 99%;
+                            @include size (99%, 99%);
                             max-height: 500px;
                             vertical-align: middle;
                             border-radius: .5rem;
                             object-fit: cover;
                             cursor: grab;
+                            transition: width .5s, height .5s, box-shadow .2s;
         
                             &:hover {
                                 width: 100%;
@@ -89,13 +91,12 @@ main {
                     padding: 0 4px;
                     
                     .media-text {
+                        @extend .align-center;
                         display: flex;
                         flex-direction: column;
                         height: 500px;
                         top: 50%;
                         text-align: center;
-                        align-items: center;
-                        justify-content: center;
                     }
                 }
             }

@@ -1,4 +1,5 @@
 .container-pre-register {
+    @extend .align-center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, auto);
@@ -6,8 +7,6 @@
                             "pre-register-bg pre-register-bg contact"
                             "pre-register-bg pre-register-bg contact"
                             "pre-register-bg pre-register-bg contact";
-    justify-content: center;
-    align-items: center;
 
     .pre-register-bg {
         grid-area: pre-register-bg;
@@ -21,14 +20,13 @@
     }
 
     .contact {
+        @extend .align-center;
         grid-area: contact;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         padding: 20px;
         border-style: outset;
-        align-items: center;
-        justify-content: center;
         max-height: 300px;
         margin: 20px;
         background-color: $bg-color-3;
@@ -40,13 +38,13 @@
         div {
             padding: 5px;
 
-            div input {
+            form .mb-2 input {
                 padding: 5px;
 
-                :last-child {
+                &:last-child {
                     display: flex;
                     justify-content: right;
-                    padding-top: 50px;
+                    padding-top: 12px;
                 }
 
                 a {
@@ -56,7 +54,7 @@
                     padding: 0.4em 0.4em;
                     border-radius:.8em;
                     
-                    :hover {
+                    &:hover {
                         background-color:rgba(255, 166, 0, 0.5);
                         cursor:pointer;
                         color: $color-1;

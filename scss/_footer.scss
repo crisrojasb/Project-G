@@ -1,19 +1,23 @@
 footer {
     background-color: $bg-color-4;
 
-    p {
-        margin: 5px;
+    div {
+        padding-inline: 20px;
     }
 
-    a {
-        text-decoration: none;
-        color: $color-1;
+    ul {
+        padding-inline: 20px;
 
-        &:hover {
-            text-decoration: underline;
-            text-shadow: 0 0 5px $color-3, 0 0 10px $color-3, 0 0 20px $color-3;
+        a {
+            text-decoration: none;
             color: $color-1;
-            transition: .3s;
+    
+            &:hover {
+                text-decoration: underline;
+                text-shadow: 0 0 4px $color-3, 0 0 8px $color-3, 0 0 16px $color-3;
+                color: $color-1;
+                transition: .3s;
+            }
         }
     }
 }
