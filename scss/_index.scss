@@ -1,0 +1,100 @@
+/* index */
+header {
+    .start_ {
+        .img-background {
+            position: relative;
+            background-image: url('../imgs/Gallery-1002.jpeg');
+            background-size: cover;
+
+            h1 {
+                position: absolute;
+                top: 20%;
+                left: 5%;
+
+                white-space: nowrap;
+                font-size: 3em;
+                text-shadow: 0 0 2px $color-3, 0 0 4px $color-3, 0 0 8px $color-3;
+                color: $color-1;
+                border-right: 4px transparent;
+                width: 21.2ch;
+
+                animation: typing 2s forwards, blink .5s infinite step-end alternate;
+                overflow: hidden;
+            }
+
+            .pegi {
+                position: absolute;
+                bottom: 1%;
+                right: 1%;
+                width: 100px;
+                height: 125px;
+
+                img {
+                    width: 60%;
+                    height: 60%;
+                    object-fit: cover;
+                }
+            }
+
+            .esrb {
+                position: absolute;
+                bottom: 1%;
+                right: 90px;
+                width: 100px;
+                height: 125px;
+
+                img {
+                    width: 60%;
+                    height: 60%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .index_ {
+        margin: 10px;
+
+        .index-title {
+            display: flex;
+            @extend .align-center;
+
+            h2 {
+                white-space: nowrap;
+                font-size: 3em;
+                text-shadow: 0 0 1px $color-3, 0 0 2px $color-3, 0 0 4px $color-3;
+                color: $color-1;
+                border-right: 4px transparent;
+                width: 4.3ch;
+            }
+        }
+
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        margin: auto;
+                        border: 10px solid transparent;
+                        border-image: url(../imgs/border.png) 30 stretch;
+                        width: 70%;
+                    }
+
+                    .carousel-caption {
+                        h5 {
+                            text-shadow: 0 0 .5px $color-3, 0 0 1px $color-3, 0 0 2px $color-3;
+                        }
+
+                        .d-grid {
+                            a {
+                                color: $color-3;
+                                background-color: $bg-color-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

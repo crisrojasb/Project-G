@@ -1,95 +1,88 @@
-@media screen and (max-width: 1280px) {
-    .header_ {
-        nav {
-            height: 65px;
-            
-            .logo {
-                margin-left: 20px;
-            }
-
-            .bar-button {
-                display: initial;
-            }
+@media screen and (max-width: 991px) {
+    body {
+        .wrapper_ {
+            .nav_ {
+                .navbar-toggler {
+                    margin-bottom: 12px;
+                }
+    
+                #navbarNav {
+                    .list-nav {
+                        width: 35%;
+                        height: 340px;
+                        padding-right: 0;
         
-            .list-nav {
-                position: fixed;
-                width: 100%;
-                top: 65px;
-                background:$bg-color-2;
-                text-align: right;
-                transition: all .5s;
-        
-                li {
-                    display: none;
-                    line-height: 30px;
-                    margin: 50px 70px; 
-                    transform: all .5s;
-        
-                    a {
-                        font-size: 16px;
+                        li {
+                            background-color: $bg-color-2;
+                            margin: 0;
+                            text-align: center;
+                        }
                     }
                 }
             }
-        }
-    }
-
-    .container_ {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .start_ {
-        display: contents;
+    
+            header {
+                .start_ {
+                    .img-background {
+                        h1 {
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
         
-        a {
-            display: none;
+            .container_gr {
+                .media {
+                    .row {
+                        .column-img {
+                            flex-direction: column;
+                            -ms-flex: 100%;
+                            flex: 100%;
+                            max-width: 100%;
+                        }
+                    
+                        .column-text {
+                            flex-direction: column;
+                            height: 200px;
+                            -ms-flex: 100%;
+                            flex: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        
+            .container-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+            #about-us img {
+                width: 300px;
+                height: 300px;
+            }
+        
+            .pre-register-bg img {
+                display: none;
+            }
+        
+            .container-sign-up {
+                width: 100%;
+                height: auto;
+            }
         }
-    }
-
-    .img-background {
-        object-fit: contain;
-    }
-
-    .column-img {
-        flex-direction: column;
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .column-text {
-        flex-direction: column;
-        height: 200px;
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .container-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #about-us img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .pre-register-bg img {
-        display: none;
-    }
-
-    .container-sign-up {
-        width: 100%;
-        height: auto;
     }
 }
 
-@media screen and (max-width: 720px) {
-    .container-gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .gallery-item:nth-child(9) {
-        grid-row-start: span 1;
+@media screen and (max-width: 768px) {
+    body {
+        .wrapper_ {
+            .container-gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        
+            .gallery-item:nth-child(9) {
+                grid-row-start: span 1;
+            }
+        }
     }
 }

@@ -5,6 +5,12 @@
     h2 {
         text-align: center;
         padding: 10px;
+
+        white-space: nowrap;
+        font-size: 3em;
+        text-shadow: 0 0 2px $color-3, 0 0 4px $color-3, 0 0 8px $color-3;
+        color: $color-1;
+        border-right: 4px transparent;
     }
 }
 
@@ -17,7 +23,7 @@
     position: relative;
     
     .gallery-item {
-        @extend .align-center;
+        @extend .align-center; // usando extend
         padding: 5px;
         display: flex;
 

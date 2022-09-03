@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .7;
+    opacity: .8;
     width: 100%;
 
     .sign-up {
@@ -19,7 +19,11 @@
 
         h3 {
             padding: 2.7rem 0;
-            font-size: 2rem;
+            white-space: nowrap;
+            font-size: 2em;
+            text-shadow: 0 0 2px $color-3, 0 0 4px $color-3, 0 0 8px $color-3;
+            color: $color-1;
+            border-right: 4px transparent;
         }
     }
 }

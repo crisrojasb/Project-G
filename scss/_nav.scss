@@ -1,0 +1,49 @@
+.nav_ {
+    padding-inline: 10px;
+    background-color: $bg-color-2;
+    box-shadow: 0 3px 7px 0 $b-color-4;
+    margin: 0;
+    top: 0;
+    justify-content: space-between;
+    font-size: large;
+    height: 60px;
+    width: 100%;
+
+    .logo {
+        width: 150px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .list-nav {
+        position: relative;
+        height: 85px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        padding-right: 100px;
+
+        li {
+            display: inline-block;
+            line-height: 85px;
+            margin: 0 20px;
+            transition: none;
+
+            a {
+                color: $color-1;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-decoration: none;
+
+                &.active, &:hover  {
+                    text-shadow: 0 0 10px $color-3, 0 0 20px $color-3, 0 0 40px $color-3;
+                    color: $color-1;
+                    transition: .3s ;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

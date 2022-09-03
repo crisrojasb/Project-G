@@ -26,53 +26,46 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/stylecss.css">
 
-    <title>Game Project Website - Sign up</title>
+    <title>Game Project Website - Contact us</title>
 </head>
 <body>
     <div class="wrapper_">
-        <header class="header_">
-            <nav>
-                <!-- Img del logo -->
-                <div>
-                    <a href="../index.html#home"><img src="../imgs/Project-G_Logo.png" alt="Logo" class="home logo"></a>
-                </div>
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-button">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <!-- Lista del menú -->
-                <ul class="list-nav">
-                    <li><a href="../index.html#home">Home</a></li>
-                    <li><a href="about-us.html">About us</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="sign-up.html" class="active">Sign up</a></li>
+        <nav class="navbar navbar-expand-lg px-4 navbar-dark shadow fixed-top nav_">
+            <div>
+                <a href="../index.html#home"><img src="../imgs/Project-G_Logo.png" alt="Logo" class="home logo"></a>
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-jg-0 list-nav">
+                    <li class="nav-item"><a href="../index.html#home">Home</a></li>
+                    <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="about-us.html">About us</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="active">Contact us</a></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </nav>
+
+        <div class="nav-spacing"></div>
         
         <main>
             <div class="container_ container-sign-up">
                 <!-- Sign up / Registrarse -->
                 <div class="sign-up">
-                    <h3>Sign up</h3>
+                    <h3>How can we help you?</h3>
                     <form>
-                        <h4 class="create-account">Create a free account!</h4>
                         <div class="mb-3">
                             <label for="exampleInputName" class="form-label">Name</label>
                             <input type="name" class="form-control" id="exampleInputName">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="exampleInputIssue" class="form-label">Issue</label>
+                            <input type="issue" class="form-control" id="exampleInputIssue">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Accept terms and conditions</label>
+                            <label for="exampleInputMessage" class="form-label">Message</label>
+                            <textarea class="form-control" aria-label="With textarea" id="exampleInputMessage"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -91,10 +84,10 @@
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3">
-                    <a href="https://www.instagram.com/sr.elver3d/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Logo instagram" class="bi" width="24" height="24">Sr Elver / 3D Designer</a>
+                    <a href="https://www.instagram.com/sr.elver3d/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Logo instagram" class="bi" width="24" height="24"> Sr Elver / 3D Designer</a>
                 </li>
                 <li class="ms-3">
-                    <a href="https://sketchfab.com/CBassReds" target="_blank"><img src="../imgs/sketchfab-logo.png" alt="Logo Sketchfab" class="bi" width="24" height="24">CBass / Programmer</a>
+                    <a href="https://sketchfab.com/CBassReds" target="_blank"><img src="../imgs/sketchfab-logo.png" alt="Logo Sketchfab" class="bi" width="24" height="24"> CBass / Programmer</a>
                 </li>
             </ul>
         </footer>
