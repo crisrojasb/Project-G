@@ -1,0 +1,21 @@
+cambios 2/09/2022
+
+* Index:
+    - Se mueve la región de progreso a la nueva sección noticias (news) en una nueva pagina evolution.html
+    - Se agrega la nueva región News con un carrusel y sus respectivos links segun su contenido
+
+* /pages:
+    - Se optimizan todas las paginas. Nav + su respectivo scss
+
+    * sign-up:
+        - Se elimina la pagina sign-up.html
+    
+    * contact-us:
+        - Se crea la pagina contact-us.html + contenido respectivo
+
+* scss / nav:
+    - Ahora se usa la opcion de navegación de Bootstrap para evitar conflictos con el responsive
+    - Se optimiza el despliegue de la lista
+
+* imgs:
+    - Agregamos nuevas imagenes creadas por el grupo de desarrollo del video-juego
