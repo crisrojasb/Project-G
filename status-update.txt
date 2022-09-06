@@ -19,3 +19,6 @@ cambios 2/09/2022
 
 * imgs:
     - Agregamos nuevas imagenes creadas por el grupo de desarrollo del video-juego
+
+6/09/2022
+    - Arreglada referencia de los link + texto de los botones en los html pre-register, about-us contact-us
